@@ -1,0 +1,2 @@
+# gmod
+📃 documenting various stuff

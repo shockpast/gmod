@@ -1,0 +1,182 @@
+// 0x009F17F4
+// client.dylib
+0	CHLClient::Init(void * (*)(char const*,int *),void * (*)(char const*,int *),CGlobalVarsBase *,IGet *)
+1	CHLClient::PostInit(void)
+2	CHLClient::Shutdown(void)
+3	CHLClient::ReplayInit(void * (*)(char const*,int *))
+4	CHLClient::ReplayPostInit(void)
+5	CHLClient::LevelInitPreEntity(char const*)
+6	CHLClient::LevelInitPostEntity(void)
+7	CHLClient::LevelShutdown(void)
+8	CHLClient::GetAllClasses(void)
+9	CHLClient::HudVidInit(void)
+10	CHLClient::HudProcessInput(bool)
+11	CHLClient::HudUpdate(bool)
+12	CHLClient::HudReset(void)
+13	CHLClient::HudText(char const*)
+14	CHLClient::IN_ActivateMouse(void)
+15	CHLClient::IN_DeactivateMouse(void)
+16	CHLClient::IN_Accumulate(void)
+17	CHLClient::IN_ClearStates(void)
+18	CHLClient::IN_IsKeyDown(char const*,bool &)
+19	CHLClient::IN_OnMouseWheeled(int)
+20	CHLClient::IN_KeyEvent(int,ButtonCode_t,char const*)
+21	CHLClient::CreateMove(int,float,bool)
+22	CHLClient::ExtraMouseSample(float,bool)
+23	CHLClient::WriteUsercmdDeltaToBuffer(bf_write *,int,int,bool)
+24	CHLClient::EncodeUserCmdToBuffer(bf_write &,int)
+25	CHLClient::DecodeUserCmdFromBuffer(bf_read &,int)
+26	CHLClient::View_Render(vrect_t *)
+27	CHLClient::RenderView(CViewSetup const&,int,int)
+28	CHLClient::View_Fade(ScreenFade_t *)
+29	CHLClient::SetCrosshairAngle(QAngle const&)
+30	CHLClient::InitSprite(CEngineSprite *,char const*)
+31	CHLClient::ShutdownSprite(CEngineSprite *)
+32	CHLClient::GetSpriteSize(void)const
+33	CHLClient::VoiceStatus(int,int)
+34	CHLClient::InstallStringTableCallback(char const*)
+35	CHLClient::FrameStageNotify(ClientFrameStage_t)
+36	CHLClient::DispatchUserMessage(int,bf_read &)
+37	CHLClient::SaveInit(int)
+38	CHLClient::SaveWriteFields(CSaveRestoreData *,char const*,void *,datamap_t *,typedescription_t *,int)
+39	CHLClient::SaveReadFields(CSaveRestoreData *,char const*,void *,datamap_t *,typedescription_t *,int)
+40	CHLClient::PreSave(CSaveRestoreData *)
+41	CHLClient::Save(CSaveRestoreData *)
+42	CHLClient::WriteSaveHeaders(CSaveRestoreData *)
+43	CHLClient::ReadRestoreHeaders(CSaveRestoreData *)
+44	CHLClient::Restore(CSaveRestoreData *,bool)
+45	CHLClient::DispatchOnRestore(void)
+46	CHLClient::GetStandardRecvProxies(void)
+47	CHLClient::WriteSaveGameScreenshot(char const*)
+48	CHLClient::EmitSentenceCloseCaption(char const*)
+49	CHLClient::EmitCloseCaption(char const*,float)
+50	CHLClient::CanRecordDemo(char *,int)const
+51	CHLClient::OnDemoRecordStart(char const*)
+52	CHLClient::OnDemoRecordStop(void)
+53	CHLClient::OnDemoPlaybackStart(char const*)
+54	CHLClient::OnDemoPlaybackStop(void)
+55	CHLClient::ShouldDrawDropdownConsole(void)
+56	CHLClient::GetScreenWidth(void)
+57	CHLClient::GetScreenHeight(void)
+58	CHLClient::WriteSaveGameScreenshotOfSize(char const*,int,int,bool,bool)
+59	CHLClient::GetPlayerView(CViewSetup &)
+60	CHLClient::SetupGameProperties(CUtlVector<_XUSER_CONTEXT,CUtlMemory<_XUSER_CONTEXT,int>> &,CUtlVector&<_XUSER_PROPERTY,CUtlMemory<CUtlVector&,int>>)
+61	CHLClient::GetPresenceID(char const*)
+62	CHLClient::GetPropertyIdString(unsigned int)
+63	CHLClient::GetPropertyDisplayString(unsigned int,unsigned int,char *,int)
+64	CHLClient::InvalidateMdlCache(void)
+65	CHLClient::IN_SetSampleTime(float)
+66	CHLClient::ReloadFilesInList(IFileList *)
+67	CHLClient::StartStatsReporting(void *,bool)
+68	CHLClient::HandleUiToggle(void)
+69	CHLClient::ShouldAllowConsole(void)
+70	CHLClient::GetRenamedRecvTableInfos(void)
+71	CHLClient::GetClientUIMouthInfo(void)
+72	CHLClient::FileReceived(char const*,unsigned int)
+73	CHLClient::TranslateEffectForVisionFilter(char const*,char const*)
+74	CHLClient::ClientAdjustStartSoundParams(StartSoundParams_t &)
+75	CHLClient::DisconnectAttempt(void)
+76	CHLClient::GMOD_ReceiveServerMessage(bf_read *,int)
+77	CHLClient::GMOD_DoSnapshots(void)
+78	CHLClient::GMOD_VoiceVolume(unsigned int,float)
+79	CHLClient::GMOD_OnDrawSkybox(void)
+80	CHLClient::IN_MouseWheelAnalog(int)
+81	CHLClient::GMOD_RequestLuaFiles(void)
+82	CHLClient::GMOD_SignOnStateChanged(int,int,int)
+83	CHLClient::GMOD_OnAllSoundsStoppedCL(void)
+84	CHLClient::MarkEntitiesAsTouching(IClientEntity *,IClientEntity *)
+85	`vtable for'__cxxabiv1::__vmi_class_type_info
+86	`typeinfo name for'IBaseClientDLL
+87	`vtable for'std::range_error
+88	`typeinfo name for'CHLClient
+89	`typeinfo for'IBaseClientDLL
+90	dword_0
+91	`vtable for'__cxxabiv1::__vmi_class_type_info
+92	`typeinfo name for'C_BaseEntityClassList
+93	`vtable for'std::range_error
+94	`typeinfo name for'IGameClientExports
+95	`typeinfo for'IBaseInterface
+96	dword_0
+97	`vtable for'std::range_error
+98	`typeinfo name for'CGameClientExports
+99	`typeinfo for'IGameClientExports
+100	dword_0
+101	`vtable for'__cxxabiv1::__vmi_class_type_info
+102	`typeinfo name for'IVoiceStatusHelper
+103	`vtable for'std::range_error
+104	`typeinfo name for'CHLVoiceStatusHelper
+105	`typeinfo for'IVoiceStatusHelper
+106	dword_0
+107	`typeinfo for'CClientDLLSharedAppSystems
+108	CClientDLLSharedAppSystems::Count(void)
+109	CClientDLLSharedAppSystems::GetDllName(int)
+110	CClientDLLSharedAppSystems::GetInterfaceName(int)
+111	`vtable for'__cxxabiv1::__vmi_class_type_info
+112	`typeinfo name for'IClientDLLSharedAppSystems
+113	`vtable for'std::range_error
+114	`typeinfo name for'CClientDLLSharedAppSystems
+115	`typeinfo for'IClientDLLSharedAppSystems
+116	dword_0
+117	`vtable for'__cxxabiv1::__vmi_class_type_info
+118	`typeinfo name for'CMouthInfo
+119	dword_0
+120	`typeinfo for'CFlaggedEntitiesEnum
+121	CFlaggedEntitiesEnum::EnumElement(IHandleEntity *)
+122	dword_0
+123	`vtable for'std::range_error
+124	`typeinfo name for'CFlaggedEntitiesEnum
+125	`typeinfo for'IPartitionEnumerator
+126	dword_0
+127	dword_0
+128	`typeinfo for'CClassMap
+129	CClassMap::~CClassMap()
+130	CClassMap::~CClassMap()
+131	CClassMap::Add(char const*,char const*,int,C_BaseEntity * (*)(void))
+132	CClassMap::Lookup(char const*)
+133	CClassMap::CreateEntity(char const*)
+134	CClassMap::GetClassSize(char const*)
+135	`vtable for'__cxxabiv1::__vmi_class_type_info
+136	`typeinfo name for'IClassMap
+137	`vtable for'std::range_error
+138	`typeinfo name for'CClassMap
+139	`typeinfo for'IClassMap
+140	dword_0
+141	dword_0
+142	`typeinfo for'CClientEffectPrecacheSystem
+143	CClientEffectPrecacheSystem::Name(void)
+144	CClientEffectPrecacheSystem::Init(void)
+145	CClientEffectPrecacheSystem::PostInit(void)
+146	CClientEffectPrecacheSystem::Shutdown(void)
+147	CClientEffectPrecacheSystem::LevelInitPreEntity(void)
+148	CClientEffectPrecacheSystem::LevelInitPostEntity(void)
+149	IGameSystem::LevelShutdownPreClearSteamAPIContext(void)
+150	CClientEffectPrecacheSystem::LevelShutdownPreEntity(void)
+151	CClientEffectPrecacheSystem::LevelShutdownPostEntity(void)
+152	CClientEffectPrecacheSystem::OnSave(void)
+153	CClientEffectPrecacheSystem::OnRestore(void)
+154	CClientEffectPrecacheSystem::SafeRemoveIfDesired(void)
+155	CClientEffectPrecacheSystem::IsPerFrame(void)
+156	CClientEffectPrecacheSystem::~CClientEffectPrecacheSystem()
+157	CClientEffectPrecacheSystem::~CClientEffectPrecacheSystem()
+158	dword_0
+159	`vtable for'std::range_error
+160	`typeinfo name for'CClientEffectPrecacheSystem
+161	`typeinfo for'IGameSystem
+162	dword_0
+163	dword_0
+164	dword_0
+165	dword_0
+166	`typeinfo for'CClientEntityList
+167	CClientEntityList::OnAddEntity(IHandleEntity *,CBaseHandle)
+168	CClientEntityList::OnRemoveEntity(IHandleEntity *,CBaseHandle)
+169	CClientEntityList::~CClientEntityList()
+170	CClientEntityList::~CClientEntityList()
+171	CClientEntityList::GetClientNetworkable(int)
+172	CClientEntityList::GetClientEntity(int)
+173	CClientEntityList::NumberOfEntities(bool)
+174	CClientEntityList::GetClientUnknownFromHandle(CBaseHandle)
+175	CClientEntityList::GetClientNetworkableFromHandle(CBaseHandle)
+176	CClientEntityList::GetClientEntityFromHandle(CBaseHandle)
+177	CClientEntityList::GetHighestEntityIndex(void)
+178	CClientEntityList::SetMaxEntities(int)
+179	CClientEntityList::GetMaxEntities(void)

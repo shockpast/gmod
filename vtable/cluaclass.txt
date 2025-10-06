@@ -1,0 +1,465 @@
+// Auto reconstructed from vtable block @ 0x009EF650
+// from "client.dylib", by ida_vtables.idc
+0	CLuaClass::MetaTableDerive(void)
+1	dword_0
+2	`vtable for'__cxxabiv1::__vmi_class_type_info
+3	`typeinfo name for'CLuaClass
+4	dword_0
+5	`typeinfo for'CLuaLibrary
+6	CLuaLibrary::~CLuaLibrary()
+7	CLuaLibrary::~CLuaLibrary()
+8	CLuaUser::IsUsingLua(void)
+9	CLuaLibrary::InitLibraries(ILuaInterface *)
+10	dword_0
+11	`typeinfo for'CLuaGlobalLibrary
+12	CLuaGlobalLibrary::~CLuaGlobalLibrary()
+13	CLuaGlobalLibrary::~CLuaGlobalLibrary()
+14	CLuaUser::IsUsingLua(void)
+15	CLuaGlobalLibrary::InitLibraries(ILuaInterface *)
+16	`vtable for'std::range_error
+17	`typeinfo name for'CLuaLibrary
+18	`typeinfo for'CLuaUser
+19	dword_0
+20	`vtable for'std::range_error
+21	`typeinfo name for'CLuaGlobalLibrary
+22	`typeinfo for'CLuaLibrary
+23	dword_0
+24	dword_0
+25	`typeinfo for'CLuaTable
+26	CLuaObject::Set(ILuaObject *)
+27	CLuaObject::SetFromStack(int)
+28	CLuaObject::UnReference(void)
+29	CLuaObject::GetType(void)
+30	CLuaObject::GetString(void)
+31	CLuaObject::GetFloat(void)
+32	CLuaObject::GetInt(void)
+33	CLuaObject::GetUserData(void)
+34	CLuaObject::SetMember(char const*)
+35	CLuaObject::SetMember(char const*,ILuaObject *)
+36	CLuaObject::SetMember(char const*,float)
+37	CLuaObject::SetMember(char const*,bool)
+38	CLuaObject::SetMember(char const*,char const*)
+39	CLuaObject::SetMember(char const*,int (*)(lua_State *))
+40	CLuaObject::GetMemberBool(char const*,bool)
+41	CLuaObject::GetMemberInt(char const*,int)
+42	CLuaObject::GetMemberFloat(char const*,float)
+43	CLuaObject::GetMemberStr(char const*,char const*)
+44	CLuaObject::GetMemberUserData(char const*,void *)
+45	CLuaObject::GetMemberUserData(float,void *)
+46	CLuaObject::GetMember(char const*,ILuaObject *)
+47	CLuaObject::GetMember(ILuaObject *,ILuaObject *)
+48	CLuaObject::SetMetaTable(ILuaObject *)
+49	CLuaObject::SetUserData(void *)
+50	CLuaObject::Push(void)
+51	CLuaObject::isNil(void)
+52	CLuaObject::isTable(void)
+53	CLuaObject::isString(void)
+54	CLuaObject::isNumber(void)
+55	CLuaObject::isFunction(void)
+56	CLuaObject::isUserData(void)
+57	CLuaObject::GetMember(float,ILuaObject *)
+58	CLuaObject::Remove_Me_1(char const*,void *)
+59	CLuaObject::SetMember(float)
+60	CLuaObject::SetMember(float,ILuaObject *)
+61	CLuaObject::SetMember(float,float)
+62	CLuaObject::SetMember(float,bool)
+63	CLuaObject::SetMember(float,char const*)
+64	CLuaObject::SetMember(float,int (*)(lua_State *))
+65	CLuaObject::GetMemberStr(float,char const*)
+66	CLuaObject::SetMember(ILuaObject *,ILuaObject *)
+67	CLuaObject::GetBool(void)
+68	CLuaObject::PushMemberFast(int)
+69	CLuaObject::SetMemberFast(int,int)
+70	CLuaObject::SetFloat(float)
+71	CLuaObject::SetString(char const*)
+72	CLuaObject::GetDouble(void)
+73	CLuaObject::SetMember_FixKey(char const*,float)
+74	CLuaObject::SetMember_FixKey(char const*,char const*)
+75	CLuaObject::SetMember_FixKey(char const*,ILuaObject *)
+76	CLuaObject::SetMember_FixKey(char const*,double)
+77	CLuaObject::SetMember_FixKey(char const*,int)
+78	CLuaObject::isBool(void)
+79	CLuaObject::SetMemberDouble(char const*,double)
+80	CLuaObject::SetMemberNil(char const*)
+81	CLuaObject::SetMemberNil(float)
+82	CLuaObject::RemoveMe(void)
+83	CLuaObject::Init(void)
+84	CLuaObject::SetFromGlobal(char const*)
+85	CLuaObject::GetStringLen(unsigned int *)
+86	CLuaObject::GetMemberUInt(char const*,unsigned int)
+87	CLuaObject::SetMember(char const*,unsigned long long)
+88	CLuaObject::SetMember(char const*,int)
+89	CLuaObject::SetReference(int)
+90	CLuaObject::RemoveMember(char const*)
+91	CLuaObject::RemoveMember(float)
+92	CLuaObject::MemberIsNil(char const*)
+93	CLuaObject::SetMemberDouble(float,double)
+94	CLuaObject::GetMemberDouble(char const*,double)
+95	CLuaObject::GetMemberEntity(char const*,C_BaseEntity *)
+96	CLuaObject::SetMemberEntity(float,C_BaseEntity *)
+97	CLuaObject::SetMemberEntity(char const*,C_BaseEntity *)
+98	CLuaObject::isEntity(void)
+99	CLuaObject::GetEntity(void)
+100	CLuaObject::SetEntity(C_BaseEntity *)
+101	CLuaObject::SetMemberVector(char const*,Vector const*)
+102	CLuaObject::SetMemberVector(char const*,Vector const&)
+103	CLuaObject::SetMemberVector(float,Vector const*)
+104	CLuaObject::GetMemberVector(char const*,Vector const*)
+105	CLuaObject::GetMemberVector(int)
+106	CLuaObject::GetVector(void)
+107	CLuaObject::isVector(void)
+108	CLuaObject::SetMemberAngle(char const*,QAngle const*)
+109	CLuaObject::SetMemberAngle(char const*,QAngle const&)
+110	CLuaObject::GetMemberAngle(char const*,QAngle *)
+111	CLuaObject::GetAngle(void)
+112	CLuaObject::isAngle(void)
+113	CLuaObject::SetMemberMatrix(char const*,VMatrix const*)
+114	CLuaObject::SetMemberMatrix(char const*,VMatrix const&)
+115	CLuaObject::SetMemberMatrix(float,VMatrix const*)
+116	CLuaObject::SetMemberMatrix(int,VMatrix const*)
+117	CLuaObject::SetMemberPhysObject(char const*,IPhysicsObject *)
+118	CLuaObject::GetMemberDouble(float,double)
+119	CLuaTable::SetMemberStr(char const*,char const*,unsigned long)
+120	dword_0
+121	`typeinfo for'CLuaObject
+122	CLuaObject::Set(ILuaObject *)
+123	CLuaObject::SetFromStack(int)
+124	CLuaObject::UnReference(void)
+125	CLuaObject::GetType(void)
+126	CLuaObject::GetString(void)
+127	CLuaObject::GetFloat(void)
+128	CLuaObject::GetInt(void)
+129	CLuaObject::GetUserData(void)
+130	CLuaObject::SetMember(char const*)
+131	CLuaObject::SetMember(char const*,ILuaObject *)
+132	CLuaObject::SetMember(char const*,float)
+133	CLuaObject::SetMember(char const*,bool)
+134	CLuaObject::SetMember(char const*,char const*)
+135	CLuaObject::SetMember(char const*,int (*)(lua_State *))
+136	CLuaObject::GetMemberBool(char const*,bool)
+137	CLuaObject::GetMemberInt(char const*,int)
+138	CLuaObject::GetMemberFloat(char const*,float)
+139	CLuaObject::GetMemberStr(char const*,char const*)
+140	CLuaObject::GetMemberUserData(char const*,void *)
+141	CLuaObject::GetMemberUserData(float,void *)
+142	CLuaObject::GetMember(char const*,ILuaObject *)
+143	CLuaObject::GetMember(ILuaObject *,ILuaObject *)
+144	CLuaObject::SetMetaTable(ILuaObject *)
+145	CLuaObject::SetUserData(void *)
+146	CLuaObject::Push(void)
+147	CLuaObject::isNil(void)
+148	CLuaObject::isTable(void)
+149	CLuaObject::isString(void)
+150	CLuaObject::isNumber(void)
+151	CLuaObject::isFunction(void)
+152	CLuaObject::isUserData(void)
+153	CLuaObject::GetMember(float,ILuaObject *)
+154	CLuaObject::Remove_Me_1(char const*,void *)
+155	CLuaObject::SetMember(float)
+156	CLuaObject::SetMember(float,ILuaObject *)
+157	CLuaObject::SetMember(float,float)
+158	CLuaObject::SetMember(float,bool)
+159	CLuaObject::SetMember(float,char const*)
+160	CLuaObject::SetMember(float,int (*)(lua_State *))
+161	CLuaObject::GetMemberStr(float,char const*)
+162	CLuaObject::SetMember(ILuaObject *,ILuaObject *)
+163	CLuaObject::GetBool(void)
+164	CLuaObject::PushMemberFast(int)
+165	CLuaObject::SetMemberFast(int,int)
+166	CLuaObject::SetFloat(float)
+167	CLuaObject::SetString(char const*)
+168	CLuaObject::GetDouble(void)
+169	CLuaObject::SetMember_FixKey(char const*,float)
+170	CLuaObject::SetMember_FixKey(char const*,char const*)
+171	CLuaObject::SetMember_FixKey(char const*,ILuaObject *)
+172	CLuaObject::SetMember_FixKey(char const*,double)
+173	CLuaObject::SetMember_FixKey(char const*,int)
+174	CLuaObject::isBool(void)
+175	CLuaObject::SetMemberDouble(char const*,double)
+176	CLuaObject::SetMemberNil(char const*)
+177	CLuaObject::SetMemberNil(float)
+178	CLuaObject::RemoveMe(void)
+179	CLuaObject::Init(void)
+180	CLuaObject::SetFromGlobal(char const*)
+181	CLuaObject::GetStringLen(unsigned int *)
+182	CLuaObject::GetMemberUInt(char const*,unsigned int)
+183	CLuaObject::SetMember(char const*,unsigned long long)
+184	CLuaObject::SetMember(char const*,int)
+185	CLuaObject::SetReference(int)
+186	CLuaObject::RemoveMember(char const*)
+187	CLuaObject::RemoveMember(float)
+188	CLuaObject::MemberIsNil(char const*)
+189	CLuaObject::SetMemberDouble(float,double)
+190	CLuaObject::GetMemberDouble(char const*,double)
+191	CLuaObject::GetMemberEntity(char const*,C_BaseEntity *)
+192	CLuaObject::SetMemberEntity(float,C_BaseEntity *)
+193	CLuaObject::SetMemberEntity(char const*,C_BaseEntity *)
+194	CLuaObject::isEntity(void)
+195	CLuaObject::GetEntity(void)
+196	CLuaObject::SetEntity(C_BaseEntity *)
+197	CLuaObject::SetMemberVector(char const*,Vector const*)
+198	CLuaObject::SetMemberVector(char const*,Vector const&)
+199	CLuaObject::SetMemberVector(float,Vector const*)
+200	CLuaObject::GetMemberVector(char const*,Vector const*)
+201	CLuaObject::GetMemberVector(int)
+202	CLuaObject::GetVector(void)
+203	CLuaObject::isVector(void)
+204	CLuaObject::SetMemberAngle(char const*,QAngle const*)
+205	CLuaObject::SetMemberAngle(char const*,QAngle const&)
+206	CLuaObject::GetMemberAngle(char const*,QAngle *)
+207	CLuaObject::GetAngle(void)
+208	CLuaObject::isAngle(void)
+209	CLuaObject::SetMemberMatrix(char const*,VMatrix const*)
+210	CLuaObject::SetMemberMatrix(char const*,VMatrix const&)
+211	CLuaObject::SetMemberMatrix(float,VMatrix const*)
+212	CLuaObject::SetMemberMatrix(int,VMatrix const*)
+213	CLuaObject::SetMemberPhysObject(char const*,IPhysicsObject *)
+214	CLuaObject::GetMemberDouble(float,double)
+215	dword_0
+216	`vtable for'__cxxabiv1::__vmi_class_type_info
+217	`typeinfo name for'ILuaObject_001
+218	`vtable for'std::range_error
+219	`typeinfo name for'ILuaObject
+220	`typeinfo for'ILuaObject_001
+221	dword_0
+222	`vtable for'std::range_error
+223	`typeinfo name for'CLuaObject
+224	`typeinfo for'ILuaObject
+225	dword_0
+226	`vtable for'std::range_error
+227	`typeinfo name for'CLuaTable
+228	`typeinfo for'CLuaObject
+229	dword_0
+230	dword_0
+231	`typeinfo for'CLuaUser
+232	CLuaUser::~CLuaUser()
+233	CLuaUser::~CLuaUser()
+234	CLuaUser::IsUsingLua(void)
+235	CLuaUser::InitLibraries(ILuaInterface *)
+236	`vtable for'__cxxabiv1::__vmi_class_type_info
+237	`typeinfo name for'CLuaUser
+238	dword_0
+239	`typeinfo for'CIntroScreen
+240	CIntroScreen::Start(void)
+241	CIntroScreen::End(void)
+242	CIntroScreen::Update(char const*,bool)
+243	CIntroScreen::DoDraw(CMatRenderContextPtr &,char const*,int,int,float)
+244	`vtable for'__cxxabiv1::__vmi_class_type_info
+245	`typeinfo name for'IIntroScreen
+246	`vtable for'std::range_error
+247	`typeinfo name for'CIntroScreen
+248	`typeinfo for'IIntroScreen
+249	aCrosshairSetup
+250	aHudFastswitch
+251	aHudQuickinfo
+252	aClCrosshairsty
+253	aClCrosshairuse
+254	aClCrosshairgap
+255	aClCrosshairsiz
+256	aClCrosshairthi
+257	aClCrosshairdot
+258	aClCrosshairT
+259	aClCrosshaircol
+260	aClCrosshaircol_0
+261	aClCrosshaircol_1
+262	aClCrosshairalp
+263	aClCrosshairDra
+264	aClCrosshairOut
+265	aSensitivity
+266	aClEnableLoadin
+267	aClDefaultweapo
+268	aFpsMax
+269	aEngineNoFocusS
+270	aClDownloadfilt
+271	aLookspring
+272	aLookstrafe
+273	aMCustomaccel
+274	aMCustomaccelEx
+275	aMCustomaccelSc
+276	aMCustomaccelMa
+277	aMMousespeed
+278	aMMouseaccel1
+279	aMMouseaccel2
+280	aMYaw
+281	aMPitch
+282	aMForward
+283	aMSide
+284	aClSoftwareCurs
+285	aClAllowdownloa
+286	aClAllowupload
+287	aClLogofile
+288	aMatColorProjec
+289	aVoiceEnable
+290	aVoiceScale
+291	aVoiceAvggain
+292	aVoiceMaxgain
+293	aVoiceGainRate
+294	aVoiceGainDownw
+295	aVoiceGainTarge
+296	aVoiceGainMax
+297	aVoiceFadeoutti
+298	aVoiceForcemicr
+299	aVoiceInputfrom
+300	aVoiceLoopback
+301	aVoiceModenable
+302	aVoiceScale
+303	aVoiceOverdrive
+304	aVoiceOverdrive_0
+305	aVoiceRecordtof
+306	aVolume_0
+307	aVolumeSfx
+308	aSuitvolume
+309	aSndMusicvolume
+310	aSndGain
+311	aSndGainMax
+312	aSndGainMin
+313	aSndMixahead
+314	aSndPitchqualit
+315	aSndDucktovolum
+316	aFovDesired
+317	aCrosshair
+318	aClChatfilters
+319	aConEnable
+320	aConBgalpha
+321	aConBorder
+322	aConFilterEnabl
+323	aConFilterDupe
+324	aConFilterText
+325	aConFilterTextO
+326	aGmodDeleteTemp
+327	aHostWriteconfi
+328	aHostWriteconfi_0
+329	aMatSavechanges
+330	aClMouseenable
+331	aSkill
+332	aClPlayersprayd
+333	aMpFlashlight
+334	aSvCheats
+335	aMatSetvideomod
+336	aMatViewportsca
+337	aMatViewportups
+338	aConnect_0
+339	aGmVideo
+340	aCancelselect
+341	aGmodLanguage
+342	aCefCredits
+343	aGmodTos
+344	aGmodPrivacy
+345	aGmodModding
+346	aGmodServers
+347	aWhereis
+348	aPath
+349	aGmDemoToVideo
+350	aMemForceFlush
+351	aStartdemos
+352	aNextdemo
+353	aStartmovie
+354	aPlaydemo
+355	aTimedemo
+356	aTimedemoquit
+357	aDemoQuitafterp
+358	aContimes
+359	aConDrawnotify
+360	aDeveloper
+361	aRestart
+362	aMap
+363	aMapBackground
+364	aMapEdit
+365	aMaxplayers
+366	aTvRecord
+367	aExec
+368	aBind
+369	aBindMac
+370	aBindtoggle
+371	aUnbind
+372	aUnbindMac
+373	aUnbindall
+374	aAlias
+375	aEntFire
+376	aEntSetname
+377	aName
+378	aQuit
+379	aQuti
+380	aExit
+381	aKillserver
+382	aLuaRun
+383	aLuaRunCl
+384	aLuaStrict
+385	aLuaOpen
+386	aLuaCookieclear
+387	aLuaShowerrorsC
+388	aLuaShowerrorsS
+389	aLuaOpenscript
+390	aLuaOpenscriptC
+391	aLuaRedownload
+392	aLuaReloadents
+393	aLuaReloadentsC
+394	aLuaErrorUrl
+395	aGamemodeReload
+396	aGamemodeReload_0
+397	aClear_0
+398	aRconPassword
+399	aRconAddress
+400	aEcho
+401	aTestRandomchan
+402	aTestStartscrip
+403	aToggle
+404	aIncrementvar
+405	aMultvar
+406	aGameuiHide
+407	aGameuiPrevente
+408	aMatTextureLimi
+409	aMatCrosshairEx
+410	aMatDxlevel
+411	aToggleconsole
+412	aShowconsole
+413	aHideconsole
+414	aPluginLoad
+415	aSvLogsdir
+416	aSvLogfilenameF
+417	aLog
+418	aAskconnectAcce
+419	aLightprobe
+420	aBuildcubemaps
+421	aGameuiShowDial
+422	aMenuReload
+423	aDebugDump
+424	aServercfgfile
+425	aLservercfgfile
+426	aVoicerecord
+427	aMatTextureList
+428	aMatTextureList_0
+429	aMatTextureList_1
+430	aMatCrosshairEd
+431	aMatCrosshairEx
+432	aStartupmenu
+433	aMovieFixwave
+434	aClCloudSetting
+435	aStuffcmds
+436	aMatTextureSave
+437	aLoad
+438	aSndBuildcache
+439	aScreenshotInte
+440	aDevshotsScreen
+441	aMemMaxHeapsize
+442	aDatacachesize
+443	aConLogfile
+444	aVprofRecordSta
+445	aVprofRecordSto
+446	aTestLoop
+447	aPluginLoad
+448	aSvAllowWaitCom
+449	dword_0
+450	aConLogfile
+451	aQuitnoconfirm
+452	dword_0
+453	dword_0
+454	dword_0
+455	`typeinfo for'CLuaCurlHTTPRequest
+456	CLuaCurlHTTPRequest::~CLuaCurlHTTPRequest()
+457	CLuaCurlHTTPRequest::~CLuaCurlHTTPRequest()
+458	CLuaCurlHTTPRequest::Run(void)
+459	CLuaCurlHTTPRequest::OnThreadFinished(void)
+460	CLuaCurlHTTPRequest::IsFinished(void)
+461	CLuaCurlHTTPRequest::DoFinish(GarrysMod::Lua::ILuaBase *)
+462	CLuaCurlHTTPRequest::DestroyForced(void)

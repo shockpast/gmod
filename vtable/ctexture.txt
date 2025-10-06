@@ -1,0 +1,294 @@
+// 0x000CCE54
+// materialsystem.dylib
+0	CTexture::GetName(void)const
+1	CTexture::GetMappingWidth(void)const
+2	CTexture::GetMappingHeight(void)const
+3	CTexture::GetActualWidth(void)const
+4	CTexture::GetActualHeight(void)const
+5	CTexture::GetNumAnimationFrames(void)const
+6	CTexture::IsTranslucent(void)const
+7	CTexture::IsMipmapped(void)const
+8	CTexture::GetLowResColorSample(float,float,float *)const
+9	CTexture::GetResourceData(unsigned int,unsigned long *)const
+10	CTexture::IncrementReferenceCount(void)
+11	CTexture::DecrementReferenceCount(void)
+12	CTexture::SetTextureRegenerator(ITextureRegenerator *)
+13	CTexture::Download(Rect_t *,int)
+14	CTexture::GetApproximateVidMemBytes(void)const
+15	CTexture::IsError(void)const
+16	CTexture::IsVolumeTexture(void)const
+17	CTexture::GetMappingDepth(void)const
+18	CTexture::GetActualDepth(void)const
+19	CTexture::GetImageFormat(void)const
+20	CTexture::GetNormalDecodeMode(void)const
+21	CTexture::IsRenderTarget(void)const
+22	CTexture::IsCubeMap(void)const
+23	CTexture::IsNormalMap(void)const
+24	CTexture::IsProcedural(void)const
+25	CTexture::DeleteIfUnreferenced(void)
+26	CTexture::SwapContents(ITexture *)
+27	CTexture::GetFlags(void)const
+28	CTexture::ForceLODOverride(int)
+29	CTexture::SaveToFile(char const*)
+30	CTexture::Bind(Sampler_t)
+31	CTexture::Bind(Sampler_t,int,Sampler_t)
+32	CTexture::GetReferenceCount(void)
+33	CTexture::GetReflectivity(Vector &)
+34	CTexture::SetRenderTarget(int)
+35	CTexture::Release(void)
+36	CTexture::OnRestore(void)
+37	CTexture::SetFilteringAndClampingMode(void)
+38	CTexture::Precache(void)
+39	CTexture::CopyFrameBufferToMe(int,Rect_t *,Rect_t *)
+40	CTexture::CopyMeToFrameBuffer(int,Rect_t *,Rect_t *)
+41	CTexture::GetEmbeddedTexture(int)
+42	CTexture::GetTextureHandle(int,int)
+43	CTexture::~CTexture()
+44	CTexture::~CTexture()
+45	CTexture::SetRenderTarget(int,ITexture *)
+46	CTexture::BindVertexTexture(VertexTextureSampler_t,int)
+47	CTexture::MarkAsPreloaded(bool)
+48	CTexture::IsPreloaded(void)const
+49	CTexture::MarkAsExcluded(bool,int)
+50	CTexture::UpdateExcludedState(void)
+51	CTexture::IsTempRenderTarget(void)const
+52	CTexture::ReloadFilesInList(IFileList *)
+53	__ZdaPv_0
+54	`typeinfo name for'CReferenceToHandleTexture
+55	`typeinfo for'ITextureInternal
+56	dword_0
+57	__ZdaPv_0
+58	`typeinfo name for'CTexture
+59	`typeinfo for'ITextureInternal
+60	dword_0
+61	dword_0
+62	`typeinfo for'CDummyTexture
+63	CDummyTexture::GetName(void)const
+64	CDummyTexture::GetMappingWidth(void)const
+65	CDummyTexture::GetMappingHeight(void)const
+66	CDummyTexture::GetActualWidth(void)const
+67	CDummyTexture::GetActualHeight(void)const
+68	CDummyTexture::GetNumAnimationFrames(void)const
+69	CDummyTexture::IsTranslucent(void)const
+70	CDummyTexture::IsMipmapped(void)const
+71	CDummyTexture::GetLowResColorSample(float,float,float *)const
+72	CDummyTexture::GetResourceData(unsigned int,unsigned long *)const
+73	CDummyTexture::IncrementReferenceCount(void)
+74	CDummyTexture::DecrementReferenceCount(void)
+75	CDummyTexture::SetTextureRegenerator(ITextureRegenerator *)
+76	CDummyTexture::Download(Rect_t *,int)
+77	CDummyTexture::GetApproximateVidMemBytes(void)const
+78	CDummyTexture::IsError(void)const
+79	CDummyTexture::IsVolumeTexture(void)const
+80	CDummyTexture::GetMappingDepth(void)const
+81	CDummyTexture::GetActualDepth(void)const
+82	CDummyTexture::GetImageFormat(void)const
+83	CDummyTexture::GetNormalDecodeMode(void)const
+84	CDummyTexture::IsRenderTarget(void)const
+85	CDummyTexture::IsCubeMap(void)const
+86	CDummyTexture::IsNormalMap(void)const
+87	CDummyTexture::IsProcedural(void)const
+88	CDummyTexture::DeleteIfUnreferenced(void)
+89	CDummyTexture::SwapContents(ITexture *)
+90	CDummyTexture::GetFlags(void)const
+91	CDummyTexture::ForceLODOverride(int)
+92	CDummyTexture::SaveToFile(char const*)
+93	CDummyTexture::GetEmbeddedTexture(int)
+94	dword_0
+95	`typeinfo for'CDummyHardwareConfig
+96	CDummyHardwareConfig::HasDestAlphaBuffer(void)const
+97	CDummyHardwareConfig::HasStencilBuffer(void)const
+98	CDummyHardwareConfig::GetFrameBufferColorDepth(void)const
+99	CDummyHardwareConfig::GetSamplerCount(void)const
+100	CDummyHardwareConfig::HasSetDeviceGammaRamp(void)const
+101	CDummyHardwareConfig::SupportsCompressedTextures(void)const
+102	CDummyHardwareConfig::SupportsCompressedVertices(void)const
+103	CDummyHardwareConfig::SupportsNormalMapCompression(void)const
+104	CDummyHardwareConfig::SupportsVertexAndPixelShaders(void)const
+105	CDummyHardwareConfig::SupportsPixelShaders_1_4(void)const
+106	CDummyHardwareConfig::SupportsStaticControlFlow(void)const
+107	CDummyHardwareConfig::SupportsPixelShaders_2_0(void)const
+108	CDummyHardwareConfig::SupportsVertexShaders_2_0(void)const
+109	CDummyHardwareConfig::MaximumAnisotropicLevel(void)const
+110	CDummyHardwareConfig::MaxTextureWidth(void)const
+111	CDummyHardwareConfig::MaxTextureHeight(void)const
+112	CDummyHardwareConfig::TextureMemorySize(void)const
+113	CDummyHardwareConfig::SupportsOverbright(void)const
+114	CDummyHardwareConfig::SupportsCubeMaps(void)const
+115	CDummyHardwareConfig::SupportsMipmappedCubemaps(void)const
+116	CDummyHardwareConfig::SupportsNonPow2Textures(void)const
+117	CDummyHardwareConfig::GetTextureStageCount(void)const
+118	CDummyHardwareConfig::NumVertexShaderConstants(void)const
+119	CDummyHardwareConfig::NumPixelShaderConstants(void)const
+120	CDummyHardwareConfig::MaxNumLights(void)const
+121	CDummyHardwareConfig::SupportsHardwareLighting(void)const
+122	CDummyHardwareConfig::MaxBlendMatrices(void)const
+123	CDummyHardwareConfig::MaxBlendMatrixIndices(void)const
+124	CDummyHardwareConfig::MaxTextureAspectRatio(void)const
+125	CDummyHardwareConfig::MaxVertexShaderBlendMatrices(void)const
+126	CDummyHardwareConfig::MaxUserClipPlanes(void)const
+127	CDummyHardwareConfig::UseFastClipping(void)const
+128	CDummyHardwareConfig::GetDXSupportLevel(void)const
+129	CDummyHardwareConfig::GetShaderDLLName(void)const
+130	CDummyHardwareConfig::ReadPixelsFromFrontBuffer(void)const
+131	CDummyHardwareConfig::PreferDynamicTextures(void)const
+132	CDummyHardwareConfig::SupportsHDR(void)const
+133	CDummyHardwareConfig::HasProjectedBumpEnv(void)const
+134	CDummyHardwareConfig::SupportsSpheremapping(void)const
+135	CDummyHardwareConfig::NeedsAAClamp(void)const
+136	CDummyHardwareConfig::NeedsATICentroidHack(void)const
+137	CDummyHardwareConfig::SupportsColorOnSecondStream(void)const
+138	CDummyHardwareConfig::SupportsStaticPlusDynamicLighting(void)const
+139	CDummyHardwareConfig::PreferReducedFillrate(void)const
+140	CDummyHardwareConfig::GetMaxDXSupportLevel(void)const
+141	CDummyHardwareConfig::SpecifiesFogColorInLinearSpace(void)const
+142	CDummyHardwareConfig::SupportsSRGB(void)const
+143	CDummyHardwareConfig::FakeSRGBWrite(void)const
+144	CDummyHardwareConfig::CanDoSRGBReadFromRTs(void)const
+145	CDummyHardwareConfig::SupportsGLMixedSizeTargets(void)const
+146	CDummyHardwareConfig::IsAAEnabled(void)const
+147	CDummyHardwareConfig::GetVertexTextureCount(void)const
+148	CDummyHardwareConfig::GetMaxVertexTextureDimension(void)const
+149	CDummyHardwareConfig::MaxTextureDepth(void)const
+150	CDummyHardwareConfig::GetHDRType(void)const
+151	CDummyHardwareConfig::GetHardwareHDRType(void)const
+152	CDummyHardwareConfig::SupportsPixelShaders_2_b(void)const
+153	CDummyHardwareConfig::SupportsStreamOffset(void)const
+154	CDummyHardwareConfig::StencilBufferBits(void)const
+155	CDummyHardwareConfig::MaxViewports(void)const
+156	CDummyHardwareConfig::OverrideStreamOffsetSupport(bool,bool)
+157	CDummyHardwareConfig::GetShadowFilterMode(void)const
+158	CDummyHardwareConfig::NeedsShaderSRGBConversion(void)const
+159	CDummyHardwareConfig::UsesSRGBCorrectBlending(void)const
+160	CDummyHardwareConfig::SupportsShaderModel_3_0(void)const
+161	CDummyHardwareConfig::HasFastVertexTextures(void)const
+162	CDummyHardwareConfig::MaxHWMorphBatchCount(void)const
+163	CDummyHardwareConfig::ActuallySupportsPixelShaders_2_b(void)const
+164	CDummyHardwareConfig::SupportsHDRMode(HDRType_t)const
+165	CDummyHardwareConfig::GetHDREnabled(void)const
+166	CDummyHardwareConfig::SetHDREnabled(bool)
+167	CDummyHardwareConfig::SupportsBorderColor(void)const
+168	CDummyHardwareConfig::SupportsFetch4(void)const
+169	CDummyHardwareConfig::NumBooleanVertexShaderConstants(void)const
+170	CDummyHardwareConfig::NumIntegerVertexShaderConstants(void)const
+171	CDummyHardwareConfig::UseFastZReject(void)const
+172	CDummyHardwareConfig::HasFastZReject(void)const
+173	CDummyHardwareConfig::IsDX10Card(void)const
+174	dword_0
+175	`typeinfo for'CDummyMaterial
+176	CDummyMaterial::GetName(void)const
+177	CDummyMaterial::GetTextureGroupName(void)const
+178	CDummyMaterial::GetPreviewImageProperties(int *,int *,ImageFormat *,bool *)const
+179	CDummyMaterial::GetPreviewImage(unsigned char *,int,int,ImageFormat)const
+180	CDummyMaterial::GetMappingWidth(void)
+181	CDummyMaterial::GetMappingHeight(void)
+182	CDummyMaterial::GetNumAnimationFrames(void)
+183	CDummyMaterial::InMaterialPage(void)
+184	CDummyMaterial::GetMaterialOffset(float *)
+185	CDummyMaterial::GetMaterialScale(float *)
+186	CDummyMaterial::GetMaterialPage(void)
+187	CDummyMaterial::FindVar(char const*,bool *,bool)
+188	CDummyMaterial::IncrementReferenceCount(void)
+189	CDummyMaterial::DecrementReferenceCount(void)
+190	CDummyMaterial::GetEnumerationID(void)const
+191	CDummyMaterial::GetLowResColorSample(float,float,float *)const
+192	CDummyMaterial::RecomputeStateSnapshots(void)
+193	CDummyMaterial::IsTranslucent(void)
+194	CDummyMaterial::IsAlphaTested(void)
+195	CDummyMaterial::IsVertexLit(void)
+196	CDummyMaterial::GetVertexFormat(void)const
+197	CDummyMaterial::HasProxy(void)const
+198	CDummyMaterial::UsesEnvCubemap(void)
+199	CDummyMaterial::NeedsTangentSpace(void)
+200	CDummyMaterial::NeedsPowerOfTwoFrameBufferTexture(bool)
+201	CDummyMaterial::NeedsFullFrameBufferTexture(bool)
+202	CDummyMaterial::NeedsSoftwareSkinning(void)
+203	CDummyMaterial::AlphaModulate(float)
+204	CDummyMaterial::ColorModulate(float,float,float)
+205	CDummyMaterial::SetMaterialVarFlag(MaterialVarFlags_t,bool)
+206	CDummyMaterial::GetMaterialVarFlag(MaterialVarFlags_t)const
+207	CDummyMaterial::GetReflectivity(Vector &)
+208	CDummyMaterial::GetPropertyFlag(MaterialPropertyTypes_t)
+209	CDummyMaterial::IsTwoSided(void)
+210	CDummyMaterial::SetShader(char const*)
+211	CDummyMaterial::GetNumPasses(void)
+212	CDummyMaterial::GetTextureMemoryBytes(void)
+213	CDummyMaterial::Refresh(void)
+214	CDummyMaterial::NeedsLightmapBlendAlpha(void)
+215	CDummyMaterial::NeedsSoftwareLighting(void)
+216	CDummyMaterial::ShaderParamCount(void)const
+217	CDummyMaterial::GetShaderParams(void)
+218	CDummyMaterial::IsErrorMaterial(void)const
+219	CDummyMaterial::SetUseFixedFunctionBakedLighting(bool)
+220	CDummyMaterial::GetAlphaModulation(void)
+221	CDummyMaterial::GetColorModulation(float *,float *,float *)
+222	CDummyMaterial::GetMorphFormat(void)const
+223	CDummyMaterial::FindVarFast(char const*,unsigned int *)
+224	CDummyMaterial::SetShaderAndParams(KeyValues *)
+225	CDummyMaterial::GetShaderName(void)const
+226	CDummyMaterial::DeleteIfUnreferenced(void)
+227	CDummyMaterial::IsSpriteCard(void)
+228	CDummyMaterial::CallBindProxy(void *)
+229	CDummyMaterial::CheckProxyReplacement(void *)
+230	CDummyMaterial::RefreshPreservingMaterialVars(void)
+231	CDummyMaterial::WasReloadedFromWhitelist(void)
+232	CDummyMaterial::IsPrecached(void)const
+233	CDummyMaterial::GMOD_Persist(void)
+234	dword_0
+235	dword_0
+236	dword_0
+237	__ZdaPv_0
+238	`typeinfo name for'CDummyTexture
+239	`typeinfo for'ITexture
+240	dword_0
+241	`vtable for'__cxxabiv1::__vmi_class_type_info
+242	`typeinfo name for'IMaterialSystemHardwareConfig
+243	__ZdaPv_0
+244	`typeinfo name for'CDummyHardwareConfig
+245	`typeinfo for'IMaterialSystemHardwareConfig
+246	dword_0
+247	dword_0
+248	dword_0
+249	__ZdaPv_0
+250	`typeinfo name for'CDummyMaterial
+251	`typeinfo for'IMaterial
+252	dword_0
+253	`typeinfo for'CDummyMesh
+254	CDummyMesh::~CDummyMesh()
+255	CDummyMesh::~CDummyMesh()
+256	CDummyMesh::VertexCount(void)const
+257	CDummyMesh::GetVertexFormat(void)const
+258	CDummyMesh::IsDynamic(void)const
+259	CDummyMesh::BeginCastBuffer(unsigned long long)
+260	CDummyMesh::EndCastBuffer(void)
+261	CDummyMesh::GetRoomRemaining(void)const
+262	CDummyMesh::Lock(int,bool,VertexDesc_t &)
+263	CDummyMesh::Unlock(int,VertexDesc_t &)
+264	CDummyMesh::Spew(int,VertexDesc_t const&)
+265	CDummyMesh::ValidateData(int,VertexDesc_t const&)
+266	CDummyMesh::SetPrimitiveType(MaterialPrimitiveType_t)
+267	CDummyMesh::Draw(int,int)
+268	CDummyMesh::SetColorMesh(IMesh *,int)
+269	CDummyMesh::Draw(CPrimList *,int)
+270	CDummyMesh::CopyToMeshBuilder(int,int,int,int,int,CMeshBuilder &)
+271	CDummyMesh::Spew(int,int,MeshDesc_t const&)
+272	CDummyMesh::ValidateData(int,int,MeshDesc_t const&)
+273	CDummyMesh::LockMesh(int,int,MeshDesc_t &)
+274	CDummyMesh::ModifyBegin(int,int,int,int,MeshDesc_t &)
+275	CDummyMesh::ModifyEnd(MeshDesc_t &)
+276	CDummyMesh::UnlockMesh(int,int,MeshDesc_t &)
+277	CDummyMesh::ModifyBeginEx(bool,int,int,int,int,MeshDesc_t &)
+278	CDummyMesh::SetFlexMesh(IMesh *,int)
+279	CDummyMesh::DisableFlexMesh(void)
+280	CDummyMesh::MarkAsDrawn(void)
+281	CDummyMesh::ComputeMemoryUsed(void)
+282	CDummyMesh::Lock(int,bool,IndexDesc_t &)
+283	CDummyMesh::Unlock(int,IndexDesc_t &)
+284	CDummyMesh::ModifyBegin(bool,int,int,IndexDesc_t &)
+285	CDummyMesh::ModifyEnd(IndexDesc_t &)
+286	CDummyMesh::Spew(int,IndexDesc_t const&)
+287	CDummyMesh::ValidateData(int,IndexDesc_t const&)
+288	CDummyMesh::BeginCastBuffer(MaterialIndexFormat_t)
+289	CDummyMesh::IndexCount(void)const
+290	CDummyMesh::IndexFormat(void)const
+291	CDummyMesh::GetMesh(void)

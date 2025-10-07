@@ -1,0 +1,24 @@
+// 0x00A59EB8
+// client.dylib
+0	CPrediction::~CPrediction()
+1	CPrediction::Init(void)
+2	CPrediction::Shutdown(void)
+3	CPrediction::Update(int,bool,int,int)
+4	CPrediction::PreEntityPacketReceived(int,int)
+5	CPrediction::PostEntityPacketReceived(void)
+6	CPrediction::PostNetworkDataReceived(int)
+7	CPrediction::OnReceivedUncompressedPacket(void)
+8	CPrediction::GetViewOrigin(Vector &)
+9	CPrediction::SetViewOrigin(Vector &)
+10	CPrediction::GetViewAngles(QAngle &)
+11	CPrediction::SetViewAngles(QAngle &)
+12	CPrediction::GetLocalViewAngles(QAngle &)
+13	CPrediction::SetLocalViewAngles(QAngle &)
+14	CPrediction::InPrediction(void)const
+15	CPrediction::IsFirstTimePredicted(void)const
+16	CPrediction::GetIncomingPacketNumber(void)const
+17	CPrediction::RunCommand(C_BasePlayer *,CUserCmd *,IMoveHelper *)
+18	CPrediction::SetupMove(C_BasePlayer *,CUserCmd *,IMoveHelper *,CMoveData *)
+19	CPrediction::FinishMove(C_BasePlayer *,CUserCmd *,CMoveData *)
+20	CPrediction::SetIdealPitch(C_BasePlayer *,Vector const&,QAngle const&,Vector const&)
+21	CPrediction::_Update(bool,bool,int,int)

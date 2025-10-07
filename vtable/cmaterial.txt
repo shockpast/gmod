@@ -1,0 +1,102 @@
+// 0x000CA3B0
+// materialsystem.dylib
+0	CMaterial::GetName(void)const
+1	CMaterial::GetTextureGroupName(void)const
+2	CMaterial::GetPreviewImageProperties(int *,int *,ImageFormat *,bool *)const
+3	CMaterial::GetPreviewImage(unsigned char *,int,int,ImageFormat)const
+4	CMaterial::GetMappingWidth(void)
+5	CMaterial::GetMappingHeight(void)
+6	CMaterial::GetNumAnimationFrames(void)
+7	CMaterial::InMaterialPage(void)
+8	CMaterial::GetMaterialOffset(float *)
+9	CMaterial::GetMaterialScale(float *)
+10	CMaterial::GetMaterialPage(void)
+11	CMaterial::FindVar(char const*,bool *,bool)
+12	CMaterial::IncrementReferenceCount(void)
+13	CMaterial::DecrementReferenceCount(void)
+14	CMaterial::GetEnumerationID(void)const
+15	CMaterial::GetLowResColorSample(float,float,float *)const
+16	CMaterial::RecomputeStateSnapshots(void)
+17	CMaterial::IsTranslucent(void)
+18	CMaterial::IsAlphaTested(void)
+19	CMaterial::IsVertexLit(void)
+20	CMaterial::GetVertexFormat(void)const
+21	CMaterial::HasProxy(void)const
+22	CMaterial::UsesEnvCubemap(void)
+23	CMaterial::NeedsTangentSpace(void)
+24	CMaterial::NeedsPowerOfTwoFrameBufferTexture(bool)
+25	CMaterial::NeedsFullFrameBufferTexture(bool)
+26	CMaterial::NeedsSoftwareSkinning(void)
+27	CMaterial::AlphaModulate(float)
+28	CMaterial::ColorModulate(float,float,float)
+29	CMaterial::SetMaterialVarFlag(MaterialVarFlags_t,bool)
+30	CMaterial::GetMaterialVarFlag(MaterialVarFlags_t)const
+31	CMaterial::GetReflectivity(Vector &)
+32	CMaterial::GetPropertyFlag(MaterialPropertyTypes_t)
+33	CMaterial::IsTwoSided(void)
+34	CMaterial::SetShader(char const*)
+35	CMaterial::GetNumPasses(void)
+36	CMaterial::GetTextureMemoryBytes(void)
+37	CMaterial::Refresh(void)
+38	CMaterial::NeedsLightmapBlendAlpha(void)
+39	CMaterial::NeedsSoftwareLighting(void)
+40	CMaterial::ShaderParamCount(void)const
+41	CMaterial::GetShaderParams(void)
+42	CMaterial::IsErrorMaterial(void)const
+43	CMaterial::SetUseFixedFunctionBakedLighting(bool)
+44	CMaterial::GetAlphaModulation(void)
+45	CMaterial::GetColorModulation(float *,float *,float *)
+46	CMaterial::GetMorphFormat(void)const
+47	CMaterial::FindVarFast(char const*,unsigned int *)
+48	CMaterial::SetShaderAndParams(KeyValues *)
+49	CMaterial::GetShaderName(void)const
+50	CMaterial::DeleteIfUnreferenced(void)
+51	CMaterial::IsSpriteCard(void)
+52	CMaterial::CallBindProxy(void *)
+53	CMaterial::CheckProxyReplacement(void *)
+54	CMaterial::RefreshPreservingMaterialVars(void)
+55	CMaterial::WasReloadedFromWhitelist(void)
+56	CMaterial::IsPrecached(void)const
+57	CMaterial::GMOD_Persist(void)
+58	CMaterial::GetReferenceCount(void)const
+59	CMaterial::SetEnumerationID(int)
+60	CMaterial::SetNeedsWhiteLightmap(bool)
+61	CMaterial::GetNeedsWhiteLightmap(void)const
+62	CMaterial::Uncache(bool)
+63	CMaterial::Precache(void)
+64	CMaterial::PrecacheVars(KeyValues *,KeyValues *,CUtlVector<void *,CUtlMemory<void *,int>> *,int)
+65	CMaterial::ReloadTextures(void)
+66	CMaterial::SetMinLightmapPageID(int)
+67	CMaterial::SetMaxLightmapPageID(int)
+68	CMaterial::GetMinLightmapPageID(void)const
+69	CMaterial::GetMaxLightmapPageID(void)const
+70	CMaterial::GetShader(void)const
+71	CMaterial::IsPrecachedVars(void)const
+72	CMaterial::DrawMesh(VertexCompressionType_t)
+73	CMaterial::GetVertexUsage(void)const
+74	CMaterial::PerformDebugTrace(void)const
+75	CMaterial::NoDebugOverride(void)const
+76	CMaterial::ToggleSuppression(void)
+77	CMaterial::IsSuppressed(void)const
+78	CMaterial::ToggleDebugTrace(void)
+79	CMaterial::UseFog(void)const
+80	CMaterial::AddMaterialVar(IMaterialVar *)
+81	CMaterial::GetRenderState(void)
+82	CMaterial::IsManuallyCreated(void)const
+83	CMaterial::NeedsFixedFunctionFlashlight(void)const
+84	CMaterial::IsUsingVertexID(void)const
+85	CMaterial::MarkAsPreloaded(bool)
+86	CMaterial::IsPreloaded(void)const
+87	CMaterial::ArtificialAddRef(void)
+88	CMaterial::ArtificialRelease(void)
+89	CMaterial::ReportVarChanged(IMaterialVar *)
+90	CMaterial::GetChangeID(void)const
+91	CMaterial::IsTranslucentInternal(float)const
+92	CMaterial::IsRealTimeVersion(void)const
+93	CMaterial::ClearContextData(void)
+94	CMaterial::GetRealTimeVersion(void)
+95	CMaterial::GetQueueFriendlyVersion(void)
+96	CMaterial::PrecacheMappingDimensions(void)
+97	CMaterial::FindRepresentativeTexture(void)
+98	CMaterial::DecideShouldReloadFromWhitelist(IFileList *)
+99	CMaterial::ReloadFromWhitelistIfMarked(void)

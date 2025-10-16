@@ -1,5 +1,5 @@
-// Auto reconstructed from vtable block @ 0x005B75DC
-// from "engine.dylib", by ida_vtables.idc
+// 0x005B75DC
+// engine.dylib
 0	CModelRender::DrawModel(int,IClientRenderable *,unsigned short,int,model_t const*,Vector const&,QAngle const&,int,int,int,matrix3x4_t const*,matrix3x4_t const*)
 1	CModelRender::ForcedMaterialOverride(IMaterial *,char)
 2	CModelRender::SetViewTarget(CStudioHdr const*,int,Vector const&)

@@ -259,116 +259,116 @@ struct lua_State {
   ILuaBase * luabase;
 };
 
-struct CLuaObject {
-    // VTable functions
-    void (*Set)(void*);
-    void (*SetFromStack)(int);
-    void (*UnReference)();
-    int (*GetType)();
-    const char* (*GetString)();
-    float (*GetFloat)();
-    int (*GetInt)();
-    void** (*GetUserData)();
-    void (*SetMember)(const char*);
-    void (*SetMember_ILuaObject)(const char*, ILuaObject*);
-    void (*SetMember_float)(const char*, float);
-    void (*SetMember_bool)(const char*, bool);
-    void (*SetMember_string)(const char*, const char*);
-    void (*SetMember_CFunc)(const char*, int (*)(lua_State*));
-    bool (*GetMemberBool)(const char*, bool);
-    int (*GetMemberInt)(const char*, int);
-    float (*GetMemberFloat)(const char*, float);
-    const char* (*GetMemberStr)(const char*, const char*);
-    void* (*GetMemberUserData_str)(const char*, void*);
-    void* (*GetMemberUserData_float)(float, void*);
-    void (*GetMember_str_ILuaObject)(const char*, ILuaObject*);
-    void (*GetMember_ILuaObject_ILuaObject)(ILuaObject*, ILuaObject*);
-    void (*SetMetaTable)(ILuaObject*);
-    void (*SetUserData)(void*);
-    void (*Push)();
-    bool (*isNil)();
-    bool (*isTable)();
-    bool (*isString)();
-    bool (*isNumber)();
-    bool (*isFunction)();
-    bool (*isUserData)();
-    void (*GetMember_float_ILuaObject)(float, ILuaObject*);
-    void (*Remove_Me_1)(const char*, void*);
-    void (*SetMember_float_key)(float);
-    void (*SetMember_float_ILuaObject)(float, ILuaObject*);
-    void (*SetMember_float_float)(float, float);
-    void (*SetMember_float_bool)(float, bool);
-    void (*SetMember_float_string)(float, const char*);
-    void (*SetMember_float_CFunc)(float, int (*)(lua_State*));
-    const char* (*GetMemberStr_float)(float, const char*);
-    void (*SetMember_ILuaObject_ILuaObject)(ILuaObject*, ILuaObject*);
-    bool (*GetBool)();
-    void (*PushMemberFast)(int);
-    void (*SetMemberFast)(int, int);
-    void (*SetFloat)(float);
-    void (*SetString)(const char*);
-    double (*GetDouble)();
-    void (*SetMember_FixKey_float)(const char*, float);
-    void (*SetMember_FixKey_string)(const char*, const char*);
-    void (*SetMember_FixKey_ILuaObject)(const char*, ILuaObject*);
-    void (*SetMember_FixKey_double)(const char*, double);
-    void (*SetMember_FixKey_int)(const char*, int);
-    bool (*isBool)();
-    void (*SetMemberDouble_str)(const char*, double);
-    void (*SetMemberNil_str)(const char*);
-    void (*SetMemberNil_float)(float);
-    void (*RemoveMe)();
-    void (*Init)();
-    void (*SetFromGlobal)(const char*);
-    const char* (*GetStringLen)(unsigned int*);
-    unsigned int (*GetMemberUInt)(const char*, unsigned int);
-    void (*SetMember_ull)(const char*, unsigned long long);
-    void (*SetMember_int)(const char*, int);
-    void (*SetReference)(int);
-    void (*RemoveMember_str)(const char*);
-    void (*RemoveMember_float)(float);
-    bool (*MemberIsNil)(const char*);
-    void (*SetMemberDouble_float)(float, double);
-    double (*GetMemberDouble_str)(const char*, double);
-    void* (*GetMemberEntity_str)(const char*, void*); // C_BaseEntity* typically
-    void (*SetMemberEntity_float)(float, void*); // C_BaseEntity* typically
-    void (*SetMemberEntity_str)(const char*, void*); // C_BaseEntity* typically
-    bool (*isEntity)();
-    void* (*GetEntity)(); // C_BaseEntity* typically
-    void (*SetEntity)(void*); // C_BaseEntity* typically
-    void (*SetMemberVector_str_ptr)(const char*, const Vector*);
-    void (*SetMemberVector_str_ref)(const char*, const Vector&);
-    void (*SetMemberVector_float)(float, const Vector*);
-    void (*GetMemberVector_str)(const char*, Vector*);
-    Vector* (*GetMemberVector_int)(int);
-    Vector* (*GetVector)();
-    bool (*isVector)();
-    void (*SetMemberAngle_str_ptr)(const char*, const QAngle*);
-    void (*SetMemberAngle_str_ref)(const char*, const QAngle&);
-    void (*GetMemberAngle_str)(const char*, QAngle*);
-    QAngle* (*GetAngle)();
-    bool (*isAngle)();
-    void (*SetMemberMatrix_str_ptr)(const char*, const void*); // VMatrix const* typically
-    void (*SetMemberMatrix_str_ref)(const char*, const void&); // VMatrix const& typically
-    void (*SetMemberMatrix_float)(float, const void*); // VMatrix const* typically
-    void (*SetMemberMatrix_int)(int, const void*); // VMatrix const* typically
-    void (*SetMemberPhysObject)(const char*, void*); // IPhysicsObject* typically
-    double (*GetMemberDouble_float)(float, double);
-};
+// struct CLuaObject {
+//     // VTable functions
+//     void (*Set)(void*);
+//     void (*SetFromStack)(int);
+//     void (*UnReference)();
+//     int (*GetType)();
+//     const char* (*GetString)();
+//     float (*GetFloat)();
+//     int (*GetInt)();
+//     void** (*GetUserData)();
+//     void (*SetMember)(const char*);
+//     void (*SetMember_ILuaObject)(const char*, ILuaObject*);
+//     void (*SetMember_float)(const char*, float);
+//     void (*SetMember_bool)(const char*, bool);
+//     void (*SetMember_string)(const char*, const char*);
+//     void (*SetMember_CFunc)(const char*, int (*)(lua_State*));
+//     bool (*GetMemberBool)(const char*, bool);
+//     int (*GetMemberInt)(const char*, int);
+//     float (*GetMemberFloat)(const char*, float);
+//     const char* (*GetMemberStr)(const char*, const char*);
+//     void* (*GetMemberUserData_str)(const char*, void*);
+//     void* (*GetMemberUserData_float)(float, void*);
+//     void (*GetMember_str_ILuaObject)(const char*, ILuaObject*);
+//     void (*GetMember_ILuaObject_ILuaObject)(ILuaObject*, ILuaObject*);
+//     void (*SetMetaTable)(ILuaObject*);
+//     void (*SetUserData)(void*);
+//     void (*Push)();
+//     bool (*isNil)();
+//     bool (*isTable)();
+//     bool (*isString)();
+//     bool (*isNumber)();
+//     bool (*isFunction)();
+//     bool (*isUserData)();
+//     void (*GetMember_float_ILuaObject)(float, ILuaObject*);
+//     void (*Remove_Me_1)(const char*, void*);
+//     void (*SetMember_float_key)(float);
+//     void (*SetMember_float_ILuaObject)(float, ILuaObject*);
+//     void (*SetMember_float_float)(float, float);
+//     void (*SetMember_float_bool)(float, bool);
+//     void (*SetMember_float_string)(float, const char*);
+//     void (*SetMember_float_CFunc)(float, int (*)(lua_State*));
+//     const char* (*GetMemberStr_float)(float, const char*);
+//     void (*SetMember_ILuaObject_ILuaObject)(ILuaObject*, ILuaObject*);
+//     bool (*GetBool)();
+//     void (*PushMemberFast)(int);
+//     void (*SetMemberFast)(int, int);
+//     void (*SetFloat)(float);
+//     void (*SetString)(const char*);
+//     double (*GetDouble)();
+//     void (*SetMember_FixKey_float)(const char*, float);
+//     void (*SetMember_FixKey_string)(const char*, const char*);
+//     void (*SetMember_FixKey_ILuaObject)(const char*, ILuaObject*);
+//     void (*SetMember_FixKey_double)(const char*, double);
+//     void (*SetMember_FixKey_int)(const char*, int);
+//     bool (*isBool)();
+//     void (*SetMemberDouble_str)(const char*, double);
+//     void (*SetMemberNil_str)(const char*);
+//     void (*SetMemberNil_float)(float);
+//     void (*RemoveMe)();
+//     void (*Init)();
+//     void (*SetFromGlobal)(const char*);
+//     const char* (*GetStringLen)(unsigned int*);
+//     unsigned int (*GetMemberUInt)(const char*, unsigned int);
+//     void (*SetMember_ull)(const char*, unsigned long long);
+//     void (*SetMember_int)(const char*, int);
+//     void (*SetReference)(int);
+//     void (*RemoveMember_str)(const char*);
+//     void (*RemoveMember_float)(float);
+//     bool (*MemberIsNil)(const char*);
+//     void (*SetMemberDouble_float)(float, double);
+//     double (*GetMemberDouble_str)(const char*, double);
+//     void* (*GetMemberEntity_str)(const char*, void*); // C_BaseEntity* typically
+//     void (*SetMemberEntity_float)(float, void*); // C_BaseEntity* typically
+//     void (*SetMemberEntity_str)(const char*, void*); // C_BaseEntity* typically
+//     bool (*isEntity)();
+//     void* (*GetEntity)(); // C_BaseEntity* typically
+//     void (*SetEntity)(void*); // C_BaseEntity* typically
+//     void (*SetMemberVector_str_ptr)(const char*, const Vector*);
+//     void (*SetMemberVector_str_ref)(const char*, const Vector&);
+//     void (*SetMemberVector_float)(float, const Vector*);
+//     void (*GetMemberVector_str)(const char*, Vector*);
+//     Vector* (*GetMemberVector_int)(int);
+//     Vector* (*GetVector)();
+//     bool (*isVector)();
+//     void (*SetMemberAngle_str_ptr)(const char*, const QAngle*);
+//     void (*SetMemberAngle_str_ref)(const char*, const QAngle&);
+//     void (*GetMemberAngle_str)(const char*, QAngle*);
+//     QAngle* (*GetAngle)();
+//     bool (*isAngle)();
+//     void (*SetMemberMatrix_str_ptr)(const char*, const void*); // VMatrix const* typically
+//     void (*SetMemberMatrix_str_ref)(const char*, const void&); // VMatrix const& typically
+//     void (*SetMemberMatrix_float)(float, const void*); // VMatrix const* typically
+//     void (*SetMemberMatrix_int)(int, const void*); // VMatrix const* typically
+//     void (*SetMemberPhysObject)(const char*, void*); // IPhysicsObject* typically
+//     double (*GetMemberDouble_float)(float, double);
+// };
 
-struct CLuaGamemode : CLuaObject {
-	void (*LoadGamemode)(const char* gamemode, bool reload);
-	void (*ReloadGamemode)();
-	bool (*IsValidGamemode)( const char* gamemode );
-	void (*SetGamemode)( const char* gamemode, bool unknown );
-	bool (*CallName)( const char* hook );
-	void (*DeriveGamemode)( const char* gamemode );
-	bool (*CallIndex)( int hook );
-	bool (*CallWithArgsName)( const char* hook );
-	bool (*CallWithArgsIndex)( int hook );
-	void (*CallFinish)( int hook );
-	void (*CallReturns)( int hook, int returns );
-	void (*LoadCurrentlyActiveGamemode)();
-};
+// struct CLuaGamemode : CLuaObject {
+// 	void (*LoadGamemode)(const char* gamemode, bool reload);
+// 	void (*ReloadGamemode)();
+// 	bool (*IsValidGamemode)( const char* gamemode );
+// 	void (*SetGamemode)( const char* gamemode, bool unknown );
+// 	bool (*CallName)( const char* hook );
+// 	void (*DeriveGamemode)( const char* gamemode );
+// 	bool (*CallIndex)( int hook );
+// 	bool (*CallWithArgsName)( const char* hook );
+// 	bool (*CallWithArgsIndex)( int hook );
+// 	void (*CallFinish)( int hook );
+// 	void (*CallReturns)( int hook, int returns );
+// 	void (*LoadCurrentlyActiveGamemode)();
+// };
 
 #endif
